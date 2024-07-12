@@ -7,7 +7,7 @@ module "ec2_instance" {
   ami                    = "ami-09de362f44ba0a166"
   instance_type          = "t2.micro"
   key_name               = "linuxserver1"
-  monitoring             = false
+  monitoring             = true
   vpc_security_group_ids = ["sg-a25209de"]
   subnet_id              = "subnet-c28b7aa9"
 }
